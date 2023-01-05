@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <style>
+      
+        .left img {
+
+            width: 120px;
+            /* filter: invert(); */
+        }
+        .right img{
+            width:120px;
+            margin-top: -80px;
+            /* height: 10px 10px; */
+            float:right;
+            -webkit-transform: scaleX(-1);
+        }
+
+        .mid {
+            /* font-size: 4px; */
+            /* border: 2px solid red; */
+            display: block;
+            width: 60%;
+            margin: -50px auto;
+        }
+
+        .navbar {
+
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 40px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        header::before {
+            content: "";
+            background: url(img/img.jpg)no-repeat center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* opacity: 0.3; */
+        }
+
+        body {
+            color: white;
+
+            /* background:url('img/IMG_6192.jpg'); */
+        }
+
+        .Frame {
+            margin: 80px 80px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+            border: 5px solid rgb(201, 201, 246);
+            border-radius: 20px;
+            /* margin:40px 50px; */
+            /* width: 40%; */
+        }
+        .para{
+            font-size: 30px;
+        }
+        .button{
+            color: red;
+            font-size: 30px;
+        }
+
+        .social {
+            width: 100%;
+            height: 50px;
+            font-size: 10px;
+            text-align: right;
+            /* border: 2px solid yellow; */
+        }
+
+        .links {
+            height: 50px;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: row-reverse;
+            font-size: 40px;
+        }
+
+        .handles {
+            height: 50px;
+            margin: 140px 0px;
+            /* border: 2px solid red; */
+        }
+
+        .new {
+            margin: 2px;
+            /* border: 2px solid red; */
+            padding: 2px;
+            display: block;
+            color: white;
+        }
+
+        #github {
+            transition: 0ms;
+        }
+
+        #github i:hover {
+            background-color: rgb(53, 51, 51);
+        }
+
+        #linkedin {
+            transition: 0ms;
+        }
+
+        #linkedin i:hover {
+            background-color: blue;
+        }
+
+        #fb {
+            transition: 0ms;
+        }
+
+        #fb i:hover {
+            background-color: blue;
+            /* color: white; */
+        }
+
+        #insta {
+            color: white;
+            transition: 0ms;
+        }
+
+        #insta i:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimage">
+
+    </div>
+    <header>
+        <!-- /* left box for logo */ -->
+        <div class="left">
+            <img src="img/aero.jpg" alt="">
+            <!-- <div>Fly High</div> -->
+        </div>
+        <!-- right side logo -->
+        <div class="right">
+            <img src="img/aero.jpg" alt="">
+            <!-- <div>Fly High</div> -->
+        </div>
+
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <section class="Frame">
+            <div class="aviation">
+                <h3>What is Aviation?</h3>
+            </div>
+
+            <div class="para">
+                <p>Aviation is the activities surrounding mechanical flight and the aircraft industry. Aircraft includes
+                    fixed-wing and rotary-wing types, morphable wings, wing-less lifting bodies, as well as
+                    lighter-than-air craft such as hot air balloons and airships.</p>
+
+            </div>
+
+            <div class="button">
+                <button>Read More</button>
+            </div>
+
+
+        </section>
+    </header>
+
+    <footer class="social">
+        <!-- <h4>social media</h4> -->
+
+        <div class="links">
+            <div class="handles" id="github">
+                <a href="https://github.com/SachinGadge13" target="_blank" class="new"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div class="handles" id="linkedin">
+                <a href="https://www.linkedin.com/in/sachin-gadge-148259181/" target="_blank" class="new"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <div class="handles" id="fb">
+                <a href="https://www.facebook.com/sachin.gadge.10236" target="_blank" class="new"><i
+                        class="fa-brands fa-facebook"></i></a>
+            </div>
+
+            <div class="handles" id="insta">
+                <a href="https://www.instagram.com/sachin_gadge_/" target="_blank" class="new"><i
+                        class="fa-brands fa-square-instagram"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
